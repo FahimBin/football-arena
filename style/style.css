@@ -1,0 +1,224 @@
+/* font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body{
+	margin: 0;
+	padding: 0;
+	background: #ddd;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container{
+	
+	margin: 0 auto;
+	padding: 15px;
+	
+	overflow: hidden;
+	box-sizing: border-box;
+}
+/************************************/
+/*header-section*/
+/************************************/
+
+.header-section{
+    }
+.header-section .header {
+	position: relative;
+	overflow: hidden;
+	background: #2D25A0;
+	padding: 80px 25px;
+}
+.header-section .header .header-title {
+	padding: 50px;
+}
+.header-section .header h1 {
+	color: #fff;
+
+	font-weight: 900;
+	margin: 0px;
+	padding: 20px;
+}
+.header-section .header button {
+	padding: 10px 50px;
+	color: #fff;
+	background: #ff0505;
+	border: none;
+	border-radius: 6px;
+	margin-left: 20px;
+	font-size: 2vw;
+	font-weight: 900;
+}
+.header-section .header img {
+
+	transition: width 2s, transform 2s;
+}
+/************************************/
+/*end header-section*/
+/************************************/
+
+.top-players {
+	padding: 40px;
+	box-sizing: border-box;
+	
+}
+.top-players .player-grid {
+	width: 30%;
+	background: #fff;
+	padding: 15px;
+
+	box-sizing: border-box;
+}
+.top-players .player-grid img{ width: 100%; }
+
+/* footer */
+
+ 
+.footer-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.footer-icon{
+    /* margin: 20px 0px; */
+    padding: 20px;
+}
+
+/* footer */
+.footer-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.footer-icon{
+    /* margin: 20px 0px; */
+    margin: 20px 0px; */
+    padding: 20px;
+    margin: 0 auto;
+    align: center;
+    /* align-items: center; */
+    /* justify-content: center; */
+    /* background-color: red; */
+    text-align: center;
+}
+.fab{
+    padding: 10px;
+ 
+    font-size: 25px;
+}
+
+
+/*responsive*/
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+	.container{
+        width:100%; 
+    }
+	.top-players .player-grid { 
+        width: 90%; 
+        margin: 10px;
+    }
+	.header-section .header img { 
+        width: 100%;
+    }
+	.header-section .header img:hover{
+        width: 80%; 
+        transform: rotate(3deg);
+    }
+	.header-section .header h1 {
+        font-size: 30px;
+    }
+    .footer-section img{
+        width: 250px;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+	.container{
+        width:100%; 
+    }
+	.top-players .player-grid { width: 100%; margin: 15px 0px;}
+	.header-section .header img {
+         width: 100%;
+        }
+	.header-section .header img:hover{
+        width: 80%; 
+        transform: rotate(3deg);
+    }
+	.header-section .header h1 {
+        font-size: 64px;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+	.container{
+        width:700px; 
+    }
+	.top-players .player-grid {
+         width: 46%; 
+         margin: 15px 10px; 
+         float: left;
+        }
+	.header-section .header img {
+        position: absolute; 
+        right: 80px; 
+        top: 90px; 
+        width: 25vw;
+    }
+	.header-section .header img:hover{
+        width: 22vw; 
+        transform: rotate(3deg);
+    }
+	.header-section .header h1 {
+        font-size: 30px;
+    }
+
+} 
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+	.container{
+        width:900px; 
+    }
+	.top-players .player-grid {
+         width: 29%;
+          margin: 5px 18px 27px 18px;}
+	.header-section .header img {
+        position: absolute;
+        right: 80px; 
+        top: 90px; 
+        width: 25vw;}
+	.header-section .header img:hover{
+        width: 22vw; 
+        transform: rotate(3deg);}
+	.header-section .header h1 {
+        font-size: 50px;}
+}
+
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+	.container{
+        width:1130px; 
+     }
+	.top-players .player-grid { 
+        width: 30%; 
+        margin: 15px 18px 27px 18px;
+    }
+	.header-section .header img {
+        position: absolute;
+         right: 80px; 
+         top: 90px; 
+         width: 25vw;
+        }
+	.header-section .header img:hover{
+        width: 22vw; 
+        transform: rotate(3deg);
+    }
+	.header-section .header h1 {
+        font-size: 95px;}
+
+}
